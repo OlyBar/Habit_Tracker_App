@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         TextView displayView = (TextView) findViewById(R.id.habit_text_view);
 
         try{
-            displayView.setText("The habit table contains " + cursor.getCount() + " activities.\n\n");
+            displayView.setText("The table contains " + cursor.getCount() + " exercises.\n\n");
             displayView.append(HabitContract.HabitEntry._ID + " - " +
                     HabitContract.HabitEntry.COLUMN_HABIT_NAME + " - " +
                     HabitContract.HabitEntry.COLUMN_HABIT_FREQUENCY + " - " +
